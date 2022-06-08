@@ -25,10 +25,30 @@ def welcome_message():
     print("Welcome to The Scoop!")
     print("Enjoy a scoop (or two!) of ice cream with us.")
 
+# Customer Login/Registration
+
+def login_or_register():
+    """
+    Check if the user wants to log in or register.
+    Return the answer.
+    """
+    print("Let's get scooping:\n")
+    print("Please select the following options. I'd like to...")
+    print("1 - LOGIN")
+    print("2 - REGISTER")
+    answer = input("Enter your answer here:\n").strip()
+
+    end_section()
+    # Validate users input as correct
+    while answer not in ("1", "2"):
+        print("Please choose either option 1 or 2.")
+        answer = input("Enter your answer here:\n").strip()
+    return answer
+
 # Program Formatting
 def end_section():
     """
-    Print a ### to end each section.
+    Print ### to end each section.
     """
     print(" ")
     print("# "* 25)
@@ -43,5 +63,8 @@ def main():
     # Welcome message
     welcome_message()
     end_section()
+
+    #Login/Registration 
+    login_or_register()
 
 main()
