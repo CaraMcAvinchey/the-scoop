@@ -22,7 +22,7 @@ def welcome_message():
     Welcome the user to The Scoop.
     Introduce the service.
     """
-    print("Welcome to The Scoop!")
+    print("Welcome to The Scoop!\n")
     print("Enjoy a scoop (or two!) of ice cream with us.")
 
 # Customer Information
@@ -39,14 +39,15 @@ def user_info():
         end_section()
 
         if validate_name(name):
-            print(f"Hello {name}")
+            print(f"Hi {name}!\n")
+            scoop_options()
             break
 
     return name
 
 def validate_name(name):
     """
-    Validate customer name.
+    Validate customers name.
     Check if the customer input numbers or characters.
     Check if their name is at least 2 characters long.
     """
@@ -68,6 +69,47 @@ def validate_name(name):
         return False
 
     return True   
+
+def scoop_options():
+    """
+    Display the number of scoops to order.
+    Return the answer.
+    """
+    print("How many scoops would you like?")
+    print("1 - 1 scoop")
+    print("2 - 2 scoops")
+    print("3 - 3 scoops\n")
+    scoop_option = input("Enter your answer here:\n").upper().strip()
+
+    end_section()
+    repeat_order()
+
+    # Validate if the answer is 1, 2, 3
+    while scoop_option not in ("1", "2", "3"):
+        print("Please choose one of the options:")
+        print("1 - 1 scoop")
+        print("2 - 2 scoops")
+        print("3 - 3 scoops")
+        scoop_option = input("Enter your answer here:\n").upper().strip()
+
+        end_section()
+
+    return scoop_option
+
+def repeat_order():
+    """
+    Allow customer to order another ice cream.
+    """
+    print("Would you like to order another ice cream?")
+    print("1 - Yes")
+    print("2 - No")
+    order_option = input("Enter your answer here:\n").upper().strip()
+
+    if order_option == "1":
+        scoop_options()
+
+    elif order_option == "2":
+        print("Let's get your order ready...")    
 
 # Program Formatting
 def end_section():
