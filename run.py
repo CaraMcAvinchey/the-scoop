@@ -209,8 +209,12 @@ def order_complete():
 
     print("Your order is complete!")
 
-# Program Formatting
+def goodbye_message():
+    print("Please show your order number to our scoopers.")
+    print("Enjoy your ice cream!")
+    print("Hope to see you again soon!")
 
+# Program Formatting
 
 def end_section():
     """
@@ -221,7 +225,6 @@ def end_section():
     print(" ")
 
 # Main Functions
-
 
 def main():
     """
