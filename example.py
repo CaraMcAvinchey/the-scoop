@@ -17,7 +17,6 @@ data = sales.get_all_values()
 
 # Welcome Message
 
-
 def welcome_message():
     """
     Welcome the user to The Scoop.
@@ -25,7 +24,6 @@ def welcome_message():
     """
     print("Welcome to The Scoop!\n")
     print("Enjoy a scoop (or two!) of ice cream with us.")
-
 
 class IceCreamOrder:
     """
@@ -73,9 +71,9 @@ class IceCreamOrder:
         total_price = 0.00
 
         sales_worksheet = select_worksheet("sales")
-        one_scoop_column = sales_worksheet.col_values(1)
-        two_scoop_column = sales_worksheet.col_values(2)
-        three_scoop_column = sales_worksheet.col_values(3)
+        one_scope_column = sales_worksheet.col_values(1)
+        two_scope_column = sales_worksheet.col_values(2)
+        three_scope_column = sales_worksheet.col_values(3)
         sales = sales_worksheet.get_all_values()
         total_price = 0
 
@@ -108,6 +106,7 @@ class IceCreamOrder:
             print(f"Double scoops:  {triples}    = ${3.50 * triples}")
 
     # Customer Information
+
     def user_info(self):
         """
         Collect the customer's first name for their order.
@@ -126,7 +125,8 @@ class IceCreamOrder:
 
         return name
 
-    # Order Functions
+    # Ordering Functions
+
     def scoop_options(self):
         """
         Display the number of scoops to order.
@@ -172,6 +172,7 @@ class IceCreamOrder:
             order_complete()
 
 
+
 def validate_name(name):
     """
     Validate customers name.
@@ -197,7 +198,6 @@ def validate_name(name):
 
     return True
 
-
 def order_complete():
     """
     Adds sales data to the worksheet.
@@ -213,7 +213,6 @@ def order_complete():
 
 # Program Formatting
 
-
 def end_section():
     """
     Print ### to end each section.
@@ -224,16 +223,16 @@ def end_section():
 
 # Main Functions
 
-
 def main():
     """
-    Run the main code
+    Run the main code.
     """
     # Welcome message
     welcome_message()
     end_section()
     # Customer Information
-    user_info()
-
+    icecream = IceCreamOrder()
+    icecream.scoop_options()
+    goodbye_message()
 
 main()
