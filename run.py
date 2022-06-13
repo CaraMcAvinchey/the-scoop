@@ -17,7 +17,6 @@ data = sales.get_all_values()
 
 # Welcome Message
 
-
 def welcome_message():
     """
     Welcome the user to The Scoop.
@@ -26,10 +25,9 @@ def welcome_message():
     print("Welcome to The Scoop!\n")
     print("Enjoy a scoop (or two!) of ice cream with us.")
 
-
 class IceCreamOrder:
     """
-    A class used to represent a Customer
+    A class used to represent The Scoop customer
     ...
     Attributes
     -----------
@@ -227,13 +225,14 @@ def end_section():
 
 def main():
     """
-    Run the main code
+    Run the main code.
     """
     # Welcome message
     welcome_message()
     end_section()
     # Customer Information
-    user_info()
-
+    icecream = IceCreamOrder()
+    icecream.scoop_options()
+    goodbye_message()
 
 main()
