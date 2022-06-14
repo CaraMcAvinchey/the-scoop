@@ -58,12 +58,54 @@ class IceCreamOrder:
         self.items_in_order = []
         self.order_no = ''
         self.total_price = 0
-
         #self.items_in_order[1, 2, 3, 3, 3, 3]
+
+    def user_info(self):
+        """
+        Collect the customer's first name for their order.
+        """
+        print("Let's get scooping!\n")
+        print("Tell us your name so we can call you when your order is ready.\n")
+        while True:
+            name = input("Enter your name here:\n").capitalize().strip()
+            end_section()
+
+            if validate_name(name):
+                print(f"Hi {name}!\n")
+                self.scoop_options()
+                break
+
+        return name
+
+    def scoop_options(self):
+        """
+        Display the number of scoops to order.
+        Return the answer.
+        """
+        print("How many scoops would you like?")
+        print("1 - 1 scoop")
+        print("2 - 2 scoops")
+        print("3 - 3 scoops\n")
+        scoop_option = input("Enter your answer here:\n").upper().strip()
+
+        end_section()
+        self.repeat_order()
+
+        # validate order
+        while scoop_option not in ("1", "2", "3"):
+            print("1 - 1 scoop")
+            print("2 - 2 scoops")
+            print("3 - 3 scoops")
+            scoop_option = input("Enter your answer here:\n").upper().strip()
+            end_section()
+        self.items_in_order.append(scoop_option)
+        print("\nYour order has been added!")
+
+        return scoop_option
 
     def write_order_to_sheet(self):
         """
-        RECORD ORDER IN SPREADSHEET
+        Record the order in spreadsheet.
         """
         singles = self.items_in_order.count("1")
         doubles = self.items_in_order.count("2")
@@ -95,63 +137,15 @@ class IceCreamOrder:
 
     def print_reciept(self, singles, doubles, triples):
         """
-        PRINT ORDER ON SCREEN FOR USER
+        Print order on the screen for the customer
         """
         if singles > 0:
             # write to the next empty row (append to spreadsheet)
-            print(f"Single scoops:   {singles}   = ${1.50 * singles}")
+            print(f"Single scoop:   {singles}   = ${1.50 * singles}")
         if doubles > 0:
-            print(f"Double scoops:  {doubles}    = ${2.50 * doubles}")
+            print(f"Double scoop:  {doubles}    = ${2.50 * doubles}")
         if triples > 0:
-            print(f"Double scoops:  {triples}    = ${3.50 * triples}")
-
-    # Customer Information
-    def user_info(self):
-        """
-        Collect the customer's first name for their order.
-        """
-        print("Let's get scooping!\n")
-        print("Tell us your name so we can call you when your order is ready.\n")
-        while True:
-            name = input("Enter your name here:\n").capitalize().strip()
-
-            end_section()
-
-            if validate_name(name):
-                print(f"Hi {name}!\n")
-                self.scoop_options()
-                break
-
-        return name
-
-    # Order Functions
-    def scoop_options(self):
-        """
-        Display the number of scoops to order.
-        Return the answer.
-        """
-        print("How many scoops would you like?")
-        print("1 - 1 scoop")
-        print("2 - 2 scoops")
-        print("3 - 3 scoops\n")
-        scoop_option = input("Enter your answer here:\n").upper().strip()
-
-        print("\nYour order has been added!")
-
-        end_section()
-        repeat_order()
-
-        # Check if order selection is correct
-        while scoop_option not in ("1", "2", "3"):
-            print("1 - 1 scoop")
-            print("2 - 2 scoops")
-            print("3 - 3 scoops")
-            scoop_option = input("Enter your answer here:\n").upper().strip()
-
-            end_section()
-        self.items_in_order.append(scoop_option)
-
-        return scoop_option
+            print(f"Triple scoop:  {triples}    = ${3.50 * triples}")
 
     def repeat_order(self):
         """
@@ -162,12 +156,14 @@ class IceCreamOrder:
         print("2 - No\n")
         repeat_order = input("Enter your answer here:\n").upper().strip()
 
+        end_section()
+
         if repeat_order == "1":
-            scoop_options()
+            self.scoop_options()
 
         elif repeat_order == "2":
             print("\nLet's get your order ready...\n")
-            order_complete()
+            order_complete()        
 
 
 def validate_name(name):
@@ -195,7 +191,7 @@ def validate_name(name):
 
     return True
 
-
+#DELETE THIS FUNCTION, NOT NEEDED ANYMORE
 def order_complete():
     """
     Adds sales data to the worksheet.
@@ -210,6 +206,10 @@ def order_complete():
     print("Your order is complete!")
 
 def goodbye_message():
+    """
+    Let the customer know to pick up their order.
+    End the ordering process.
+    """
     print("Please show your order number to our scoopers.")
     print("Enjoy your ice cream!")
     print("Hope to see you again soon!")
