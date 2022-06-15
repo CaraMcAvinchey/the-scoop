@@ -90,6 +90,7 @@ class IceCreamOrder:
 
         # validate order
         while scoop_option not in ("1", "2", "3"):
+            print("How many scoops would you like?")
             print("1 - 1 scoop")
             print("2 - 2 scoops")
             print("3 - 3 scoops")
@@ -110,12 +111,12 @@ class IceCreamOrder:
         doubles = self.items_in_order.count("2")
         triples = self.items_in_order.count("3")
         total_price = 0.00
-        
+
         worksheet_to_update = SHEET.worksheet('sales')
         one_scoop_column = worksheet_to_update.col_values(1)
         two_scoop_column = worksheet_to_update.col_values(2)
         three_scoop_column = worksheet_to_update.col_values(3)
-        
+
         if singles > 0:
             one_scoop_column.append(singles)
             total_price = singles * 1.5
@@ -137,7 +138,6 @@ class IceCreamOrder:
         Print order for the user with a price.
         """
         if singles > 0:
-            # write to the next empty row (append to spreadsheet)
             print(f"Single scoop: {singles} = ${1.50 * singles}")
         if doubles > 0:
             print(f"Double scoop: {doubles} = ${2.50 * doubles}")
@@ -160,6 +160,7 @@ class IceCreamOrder:
         elif repeat_order == "2":
             print("\nLet's get your order ready...\n")  
             self.order_complete()   
+
 
 def validate_name(name):
     """
@@ -186,6 +187,7 @@ def validate_name(name):
 
     return True
 
+
 def goodbye_message():
     """
     Let the customer know to pick up their order.
@@ -198,6 +200,7 @@ def goodbye_message():
 
 # Program Formatting
 
+
 def end_section():
     """
     Print ### to end each section.
@@ -207,6 +210,7 @@ def end_section():
     print(" ")
 
 # Main Functions
+
 
 def main():
     """
