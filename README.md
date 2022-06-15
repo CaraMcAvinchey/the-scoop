@@ -1,6 +1,8 @@
 # THE SCOOP
 
-<img width="765" alt="image" src="https://user-images.githubusercontent.com/97494262/173844683-5bec3213-25d1-4e3f-8786-94ac619f6f22.png">
+The Scoop is a Python terminal application which runs in the Code Institute mock terminal on Heroku.
+
+<img width="980" alt="image" src="https://user-images.githubusercontent.com/97494262/173846607-830a7f65-fe86-43fb-a168-2d639c01cafb.png">
 
 ## Author
 Cara McAvinchey
