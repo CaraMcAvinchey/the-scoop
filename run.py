@@ -57,7 +57,6 @@ class IceCreamOrder:
         self.user = self.user_info()
         self.order_no = ''
         self.total_price = 0
-        #self.items_in_order[1, 2, 3, 3, 3, 3]
 
     def user_info(self):
         """
@@ -88,7 +87,6 @@ class IceCreamOrder:
         scoop_option = input("Enter your answer here:\n").upper().strip()
 
         end_section()
-        self.repeat_order()
 
         # validate order
         while scoop_option not in ("1", "2", "3"):
@@ -98,6 +96,8 @@ class IceCreamOrder:
             scoop_option = input("Enter your answer here:\n").upper().strip()
             end_section()
         self.items_in_order.append(scoop_option)
+
+        self.repeat_order()
 
         return scoop_option
 
@@ -130,7 +130,7 @@ class IceCreamOrder:
 
         print("\nYour order has been added!")
         self.total_price = total_price
-        self.print_reciept(singles, doubles, triples)
+        self.print_receipt(singles, doubles, triples)
 
     def print_receipt(self, singles, doubles, triples):
         """
@@ -142,7 +142,8 @@ class IceCreamOrder:
         if doubles > 0:
             print(f"Double scoop: {doubles} = ${2.50 * doubles}")
         if triples > 0:
-            print(f"Triple scoop: {triples} = ${3.50 * triples}")    
+            print(f"Triple scoop: {triples} = ${3.50 * triples}")
+               
 
     def repeat_order(self):
         """
@@ -191,7 +192,6 @@ def goodbye_message():
     Let the customer know to pick up their order.
     End the ordering process.
     """
-    print("Please show your order number to our scoopers.")
     end_section()
 
     print("Enjoy your ice cream!")
@@ -218,7 +218,7 @@ def main():
     end_section()
     # Customer Information
     icecream = IceCreamOrder()
-    icecream.scoop_options()
+    # icecream.scoop_options()
     goodbye_message()
 
 main()
