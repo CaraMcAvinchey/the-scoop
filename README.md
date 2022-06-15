@@ -1,23 +1,25 @@
-# PROJECT NAME
-*replace the **PROJECT NAME** header with your project's name*
-- Screenshot of logo/navigation of mobile deployed site
-- Include a link to deployed project with one line explanation of project
+# THE SCOOP
+
+*screenshot*
 
 ## Author
-DEVELOPER_NAME
+Cara McAvinchey
 
 ## Project Overview
-- Include a recording of site that shows the terminal interaction.
-  https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb is a very intuitive and free tool to do a web recording.
-- Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via git hub and it'll resovle itself.
-- One or two sentences providing an overview of your project.
-- Include a link to your deployed website
+*  The Scoop is an app built for an ice cream truck so that customers can place an order and collect their items with an order number.
+
+You can view the deployed website [here]('')
 
 ## Table of Contents
-Generate after readme is complete for UX and below
+XX
 
-## How To Play/Use
-Paragraph or bullet points of how the user initiates the program and interfaces with it. You could have videos of each bit if you want and ditact what the user should do.
+## HOW TO USE THE APP
+* First the customer is welcomed to the app and asked for their name. If valid, the customer and make their first order.
+* If their name input is not valid, the customer will get a hint about what is wrong.
+* The menu will ask for the number of scoops.
+* The app will ask the customer if they'd like to order another ice cream.
+* If no, the customer will receive notice that their order is complete and the price of the order is displayed.
+* The customer can proceed to the collection point to pay and pick up their order according to the number.
 
 ## Features
 Use this section to itemize the features of your project. 
