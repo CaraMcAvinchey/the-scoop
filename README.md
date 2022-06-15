@@ -184,41 +184,51 @@ def yes_no(question):
 ```
 
 ## Deployment
+This application will be deployed via [Heroku](https://heroku.com)
 
-### Requirements
-If the user is required to have certain keys and credentials you should include this section with diretions on how to get the necessary information.
-ex)
-1. **Google Account:** In order to have this program work, you need a google account. If you don't have one  [Create a google account](https://accounts.google.com/Signup)
-2. **Google APIs**
-    1. in a new incognito tab, log into your new google account.
-    1. then update the url to be: https://console.cloud.google.com/getting-started?pli=1 
-        
-        **GOOGLE DRIVE API Access**
-        1.  create a new project for this, call it XXXXXX (You might want to refer to what you see in this video: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/071036790a5642f9a6f004f9888b6a45/ at the bottom of the screen to write out steps.)
-        2. Then click on Add APIs and Services and select Libraries
-        3. Search for Google Drive
-        4. Click Enable
-        5. Click Create Credentials
-        6. Select Google Drive API from the drop down, Application Data, then no and click the Next Button
-        7.  (https://developers.google.com/drive/api/v3/enable-drive-api) 
-        8. for service account details fill in a service account name ex) xxx_API, then click Create and Continue
-        9. For the Accoun acces, select Role: Basic/Editor then continue
-        10. Then Click Done
-        11. Now select the newly created service account
-        12. Click on the KEYS Tab
-        13. Click Add Key
-        14. Select JSON type (right click to show in folder so you know where the file was saved.
-        
-        **GOOGLE SHEETS API Access**
-        You may need to us the back button get to the APIS & SErvices section from where you were.
-        1. click the Libray  Tab and serarch for Google Sheets
-        2. click enable
+1. Log into Heroku.
 
-3. The downloaded credentialsJSON file is basically your creds.json file that you need to put into your heroku settings or gitpod environment to access your google drive.
+2. Navigate to Dashboard. 
 
-4. Google Sheet Template
-  - If you had to create specific sheets for your project, instruct users to make their own copy of it from yours and rename it back to what the python project expects
-  - And don't forget to share the spreadsheet in question with the client_email from the creds.json 
+3. Click "New" and select "Create New app" from the drop-down menu. Name the application something unique and select your region.
+
+<img width="1438" alt="3" src="https://user-images.githubusercontent.com/97494262/173860257-49e66c65-cea9-4ff4-9cad-702574c414ea.png">
+
+4. Click "Create App".
+
+5.	Navigate to "Settings" and scroll down to "config vars".
+
+6. Click "Reveal Config Var", in the field key enter CREDS and in the value field copy and paste the contents of creds.json file.
+
+<img width="1438" alt="6" src="https://user-images.githubusercontent.com/97494262/173860589-3fc0684d-c724-43ff-b693-ec757f4035f1.png">
+
+7. Scroll down to "build packs", click "build packs" and then click both "python" and "node.js" ensuring python is first on the list.
+
+<img width="1437" alt="7" src="https://user-images.githubusercontent.com/97494262/173861135-de973726-7024-4a0a-a7cd-bac610d5f766.png">
+
+8. Navigate to the "Deploy" section.
+
+9. Scroll down to "Deployment Method" and select "GitHub".
+
+<img width="1438" alt="9" src="https://user-images.githubusercontent.com/97494262/173861309-776bc0c9-ac55-482b-99db-1a901b6acad1.png">
+
+10. Authorise the connection of Heroku to GitHub.
+
+11. Search for the GitHub repository name to connect with and select it.
+
+12. For Deployment there are two options, automatic deployment or manual. I chose Automatic Deployment so Heroku will re-build each time code is pushed to GitHub.
+
+13. Ensure the correct branch is selected "master/Main", and select the deployment method that you desire.
+
+<img width="1438" alt="13" src="https://user-images.githubusercontent.com/97494262/173861796-8339a390-f449-4d4d-b203-f5b0d33c4924.png">
+
+14. Force the first deployment by clicking 'deploy branch' and wait for the site to build.
+15. Ensure the build was successful by checking the overview tab and the activity log should say 'Build succeeded'
+
+<img width="1271" alt="image" src="https://user-images.githubusercontent.com/97494262/173862726-50da81d4-dcf3-489a-9e8b-3b9b8f1db9d3.png">
+
+16. Open the deployed site and check that the program is running.
+
 ### Gitpod
 This section should describe the process someone would have to go through to get the local working in gitpod.  Such as install requirements.txt  and setting up a creds.json file that is in the gitignore and keeping their workspace.
 
