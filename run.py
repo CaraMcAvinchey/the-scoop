@@ -33,23 +33,23 @@ class IceCreamOrder:
     user = str
         The customer's first name
     items_in_order = list
-        The items a customer ordered 
+        The items a customer ordered
     order_no = str
-        An order number for the customer 
+        An order number for the customer
     total_price = number
-        The total price of the order placed        
+        The total price of the order placed
     Methods
     --------
     order_complete
-        Records the order placed in the spreadsheet 
+        Records the order placed in the spreadsheet
     print_receipt
         Prints the order on the screen for the customer
     user_info
-        Collects the first name from the customer  
+        Collects the first name from the customer
     scoop_options
-        Displays the menu for the customer to order from  
+        Displays the menu for the customer to order from
     repeat_order
-        Allows the customer to order again        
+        Allows the customer to order again
     """
 
     def __init__(self):
@@ -63,7 +63,7 @@ class IceCreamOrder:
         Collect the customer's first name for their order.
         """
         print("Let's get scooping!\n")
-        print("Tell us your name so we can call you when your order is ready.\n")
+        print("What's your name?\n")
         while True:
             name = input("Enter your name here:\n").capitalize().strip()
             end_section()
@@ -143,7 +143,6 @@ class IceCreamOrder:
             print(f"Double scoop: {doubles} = ${2.50 * doubles}")
         if triples > 0:
             print(f"Triple scoop: {triples} = ${3.50 * triples}")
-               
 
     def repeat_order(self):
         """
