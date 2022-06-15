@@ -8,7 +8,7 @@ Cara McAvinchey
 ## Project Overview
 *  The Scoop is an app built for an ice cream truck so that customers can place an order and collect their items with an order number.
 
-You can view the deployed website [here]('')
+You can view the deployed website [here](https://the-scoop-icecream.herokuapp.com/)
 
 ## Table of Contents
 XX
