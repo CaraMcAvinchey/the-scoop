@@ -40,7 +40,7 @@ class IceCreamOrder:
         The total price of the order placed        
     Methods
     --------
-    update_sales_worksheet
+    order_complete
         Records the order placed in the spreadsheet 
     print_receipt
         Prints the order on the screen for the customer
@@ -91,40 +91,45 @@ class IceCreamOrder:
         self.repeat_order()
 
         # validate order
-        # while scoop_option not in ("1", "2", "3"):
-        #     print("1 - 1 scoop")
-        #     print("2 - 2 scoops")
-        #     print("3 - 3 scoops")
-        #     scoop_option = input("Enter your answer here:\n").upper().strip()
-        #     end_section()
+        while scoop_option not in ("1", "2", "3"):
+            print("1 - 1 scoop")
+            print("2 - 2 scoops")
+            print("3 - 3 scoops")
+            scoop_option = input("Enter your answer here:\n").upper().strip()
+            end_section()
         self.items_in_order.append(scoop_option)
-       
-        singles = self.items_in_order.count("1")
-        doubles = self.items_in_order.count("2")
-        triples = self.items_in_order.count("3")
-
-        self.print_receipt(singles, doubles, triples)
-        print("Sending your order to our scoopers...")
 
         return scoop_option
 
-    # def update_sales_worksheet(self):
+    def order_complete(self):
         """
         Adds sales data to the worksheet.
         Informs customer that their order is done.
         """
+        singles = self.items_in_order.count("1")
+        doubles = self.items_in_order.count("2")
+        triples = self.items_in_order.count("3")
+        total_price = 0.00
         
-
+        worksheet_to_update = SHEET.worksheet('sales')
         one_scoop_column = worksheet_to_update.col_values(1)
         two_scoop_column = worksheet_to_update.col_values(2)
         three_scoop_column = worksheet_to_update.col_values(3)
+        
+        if singles > 0:
+            one_scoop_column.append(singles)
+            total_price = singles * 1.5
+        if doubles > 0:
+            two_scoop_column.append(doubles)
+            total_price = doubles * 2.5
+        if triples > 0:
+            three_scoop_column.append(triples)
+            total_price = triples * 3.5
 
-        # Same function as used on the love_sandwiches walk through project
-        # by Code Institute
-        worksheet_to_update = SHEET.worksheet('sales')
-        worksheet_to_update.insert_row(self.items_in_order)
+        worksheet_to_update.append_row(self.items_in_order)
 
         print("\nYour order has been added!")
+        self.total_price = total_price
         self.print_reciept(singles, doubles, triples)
 
     def print_receipt(self, singles, doubles, triples):
@@ -153,7 +158,8 @@ class IceCreamOrder:
             self.scoop_options()
 
         elif repeat_order == "2":
-            print("\nLet's get your order ready...\n")     
+            print("\nLet's get your order ready...\n")  
+            self.order_complete()   
 
 def validate_name(name):
     """
@@ -212,6 +218,7 @@ def main():
     end_section()
     # Customer Information
     icecream = IceCreamOrder()
+    icecream.scoop_options()
     goodbye_message()
 
 main()
