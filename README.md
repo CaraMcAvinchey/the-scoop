@@ -212,6 +212,7 @@ This application will be deployed via [Heroku](https://heroku.com)
 * Dog's in the Hood by Obiageli Onyekpe
     - Deployment section steps in README.
     - Libraries section used and descriptions in README.
+* Flowchart created using [diagrams.net](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse)
 * This [GeeksforGeeks](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse) article assisted with generating a random number for my order function
 * Thanks to my mentor, Malia Havlicek for reviewing and giving suggestions on how to improve my project.
 * The tutors at Code Institute for their patience and support.
