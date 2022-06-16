@@ -107,9 +107,6 @@ To better group the game as an object, I wrote a class representing its properti
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your features and ensure that they all work as intended in an easy and straightforward way for the users to achieve their goals.
-
-
 ### Validation Testing
 You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
 
@@ -126,23 +123,7 @@ If the line is too long just add
 There is a space before the # and after it to skip the quality assurance for that line.
 
 ### Manual Testing
-
-Use Markdown to track how you tested each bit of user input for each valid option, various invalid entries and leading/trailing spaces
-
-**Feature 1**
-- [ ] invalid entry, says sorry and repropts
-- [ ] no entry, says sorry and reprompts
-- [ ] alpha when numeric expected, sorry and reprompts
-- [ ] valid entry with leading spaces, trimmed and shows proper next stage
-- [ ] valid entry with trailing spaces, trimed and shows proper next stage
-
-You should also call out how you tested any other features such as:
-- Welcome Message, recaps user name
-- Score update shows current score
-- color change for correct vs incorrect
-- google sheet updated properly
-
-If you prefer spreadsheets, create a googlesheet and link to it in this section, just make sure you update the permissions to allow anyone to view it.
+* You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/1tB4dZcZOXlaUn-47L1OZD27e5xZdzZz8Y1MKFU8m00U/edit?usp=sharing)
 
 ### Defects of Note
 Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here.
