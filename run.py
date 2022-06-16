@@ -121,18 +121,14 @@ class IceCreamOrder:
 
         if singles > 0:
             one_scoop_column.append(singles)
-            total_price = singles * 1.5
         if doubles > 0:
             two_scoop_column.append(doubles)
-            total_price = doubles * 2.5
         if triples > 0:
             three_scoop_column.append(triples)
-            total_price = triples * 3.5
 
         worksheet_to_update.append_row(self.items_in_order)
 
         print("\nYour order has been added!")
-        self.total_price = total_price
         self.print_receipt(singles, doubles, triples)
 
     def print_receipt(self, singles, doubles, triples):
@@ -146,8 +142,8 @@ class IceCreamOrder:
         if triples > 0:
             print(f"Triple scoop: {triples} = ${3.50 * triples}")
 
-        total_price = int(singles + doubles + triples)
-        print(f"Total: {total_price}")
+        total_price = (1.50 * singles) + (2.50 * doubles) + (3.50 * triples)
+        print(f"Total: ${total_price}")
 
         self.order_number()
 
