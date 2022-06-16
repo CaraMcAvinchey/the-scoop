@@ -52,9 +52,9 @@ In each subsection, write out what the feature is for and what value it adds. If
 
 ## Design Documents
 
-This section is where you would share logic diagrams and spreadsheets that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in a separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser. 
+The below flowchart maps out the user experience from beginning to end. The registration process is marked off as a future feature and explained in detail [here](#future-features). Due to time constraints and my limited knowledge, I was not able to code this part of the project. 
 
-The flowchart can be as simple as a picture of a drawing of how you envisioned laying out the logic for you project, or done with a professional tool such as powerpoint, googlesheets, or [https://app.diagrams.net/](https://app.diagrams.net/) They are a roadmap and do not have to be 100% accurate of the final product.
+![icecream-two-three](https://user-images.githubusercontent.com/97494262/174000156-c863418a-35f2-4e94-9420-a844a3d243d8.jpg)
 
 ## Data Model/ Classes
 In this section write our your data model(s) or classes. 
