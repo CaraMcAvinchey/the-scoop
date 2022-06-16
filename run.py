@@ -16,6 +16,7 @@ sales = SHEET.worksheet('sales')
 
 # Welcome Message
 
+
 def welcome_message():
     """
     Welcome the user to The Scoop.
@@ -23,6 +24,7 @@ def welcome_message():
     """
     print("Welcome to The Scoop!\n")
     print("Enjoy a scoop (or two!) of ice cream with us.")
+
 
 class IceCreamOrder:
     """
@@ -144,6 +146,11 @@ class IceCreamOrder:
         if triples > 0:
             print(f"Triple scoop: {triples} = ${3.50 * triples}")
 
+        total_price = int(singles + doubles + triples)
+        print(f"Total: {total_price}")
+
+        self.order_number()
+
     def repeat_order(self):
         """
         Allow customer to order another ice cream.
@@ -158,8 +165,16 @@ class IceCreamOrder:
             self.scoop_options()
 
         elif repeat_order == "2":
-            print("\nLet's get your order ready...\n")  
-            self.order_complete()   
+            print("\nLet's get your order ready...\n")
+            self.order_complete()
+
+    def order_number(self):
+        """
+        Generates an order number for the customer.
+        """
+        print(' ')
+        order_no = random.randint(1, 100)
+        print(f"Your order number is {order_no}")
 
 
 def validate_name(name):
@@ -223,5 +238,6 @@ def main():
     icecream = IceCreamOrder()
     # icecream.scoop_options()
     goodbye_message()
+
 
 main()
