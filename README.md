@@ -158,6 +158,20 @@ If you know of something that isn't quite right, create an issue and  link to it
 Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline and lack of skills. It's best to mention it but note why you allowed it to go live than let asccessors think you didn't notice it.
 
 ## Deployment
+
+### Gitpod
+Before deploying, the Gitpod workspace needs the following setup steps for Heroku to build the project:
+
+1. Install the dependencies for Heroku using the following instruction to the terminal:
+```$python
+pip3 freeze > requirements.txt
+```
+<img width="291" alt="image" src="https://user-images.githubusercontent.com/97494262/174004074-ad7dcaae-25cd-471c-b25a-4f8f0a7fbbbd.png">
+
+2. The project creds.json file from the Google Drive and Google Sheets API access used when adding Config Var, see example below:
+<img width="624" alt="Screenshot 2022-06-16 at 14 06 35" src="https://user-images.githubusercontent.com/97494262/174003352-fba526ae-1358-4580-8628-1831d7817df2.png">
+
+### Heroku
 This application will be deployed via [Heroku](https://heroku.com)
 
 1. Log into Heroku.
@@ -202,30 +216,6 @@ This application will be deployed via [Heroku](https://heroku.com)
 <img width="1271" alt="image" src="https://user-images.githubusercontent.com/97494262/173862726-50da81d4-dcf3-489a-9e8b-3b9b8f1db9d3.png">
 
 16. Open the deployed site and check that the program is running.
-
-### Gitpod
-This section should describe the process someone would have to go through to get the local working in gitpod.  Such as install requirements.txt  and setting up a creds.json file that is in the gitignore and keeping their workspace.
-
-If you have project settings required such as a creds.json file from the GOOGLE DRIVE API acess, please provide an example of that file in the writeup with the project key values:
-```$python
-{
-    "type": "service_account",
-    "project_id": "<YOUR_VALUE>",
-    "private_key_id": "<YOUR_VALUE>",
-    "private_key": "<YOUR_VALUE>",
-    "client_email": "<YOUR_VALUE>",
-    "client_id": "<YOUR_VALUE>",
-    "auth_uri": "https://accoutns.google.com/0/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cer_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "clien_x509_cert_url": "<YOUR_VALUE>"
-}
-```
-
-If you have any dependencies, you should instruct users to install them
-```$python
-pip3 install -r requirements.txt
-```
 
 ## Credits
 
