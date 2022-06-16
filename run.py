@@ -40,16 +40,16 @@ class IceCreamOrder:
         The total price of the order placed
     Methods
     --------
+    user_info
+        Asks for the name of the customer
+    scoop_options
+        Displays the menu for the customer to order
+    repeat_order
+        Allows the customer to order again        
     order_complete
         Records the order placed in the spreadsheet
     print_receipt
         Prints the order on the screen for the customer
-    user_info
-        Collects the first name from the customer
-    scoop_options
-        Displays the menu for the customer to order from
-    repeat_order
-        Allows the customer to order again
     """
 
     def __init__(self):
