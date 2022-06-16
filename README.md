@@ -244,7 +244,16 @@ Make a list of sites you used images from. If you used several sites try to matc
 
 ### Acknowledgments
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+* Code Institute: Love Sandwiches Project
+    - Mock terminal to run the final project.
+    - Steps to declare and connect the Google APIs to my worksheet.
+    - Function to update the worksheet.
+    - Steps to deploy the project to Heroku.
 
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
+* Dog's in the Hood by Obiageli Onyekpe
+    - Deployment section steps in README.
+    - Libraries section used and descriptions in README.
 
+* Thanks to my mentor, Malia Havlicek for reviewing and giving suggestions on how to improve my project.
+* The tutors at Code Institute for their patience and support.
+* The Code Institute Slack community for tips and guidance.
