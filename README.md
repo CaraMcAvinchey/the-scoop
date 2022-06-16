@@ -229,23 +229,11 @@ pip3 install -r requirements.txt
 
 ## Credits
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did. 
-
--[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
-    - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
-
-### Content
-
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
-
-### Media
-
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
-
 ### Acknowledgments
 
 * Code Institute: Love Sandwiches Project
-    - Mock terminal to run the final project.
+    - [Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
+    - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
     - Steps to declare and connect the Google APIs to my worksheet.
     - Function to update the worksheet.
     - Steps to deploy the project to Heroku.
