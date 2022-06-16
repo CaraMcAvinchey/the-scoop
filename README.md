@@ -15,11 +15,22 @@ You can view the deployed website [here](https://the-scoop-icecream.herokuapp.co
 ## Table of Contents
 XX
 
-## HOW TO USE THE APP
+## How to use The Scoop
 * First the customer is welcomed to the app and asked for their name. If valid, the customer and make their first order.
+![1](https://user-images.githubusercontent.com/97494262/173981166-5e0f66ea-ce4a-4cb9-983e-1e950403529e.gif)
+
 * If their name input is not valid, the customer will get a hint about what is wrong.
-* The menu will ask for the number of scoops.
-* The app will ask the customer if they'd like to order another ice cream.
+![2](https://user-images.githubusercontent.com/97494262/173981316-be2beec0-a8cd-4a7d-9639-2c121b27751a.gif)
+
+* The menu displayed will ask for the number of scoops.
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/97494262/173981509-7183c6fb-a425-475b-b6f3-b47175c92636.png">
+
+* The menu will display again if the input is not valid.
+![3](https://user-images.githubusercontent.com/97494262/173982886-cc4916bb-15af-434a-8a21-00b400b99904.gif)
+
+* The app will then ask the customer if they'd like to order another ice cream.
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/97494262/173982983-d69fb162-3eeb-4d37-b081-725adcbb6fc2.png">
+
 * If no, the customer will receive notice that their order is complete and the price of the order is displayed.
 * The customer can proceed to the collection point to pay and pick up their order according to the number.
 
@@ -33,7 +44,6 @@ It's easiest to break this section down into piece parts or core functionality b
 
 ### Implemented Features
 In each subsection, write out what the feature is for and what value it adds. If there is terminal interaction or output associated with the function, include a screenshot.
-
 
 ### Future Features
 
