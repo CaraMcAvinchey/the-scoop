@@ -78,9 +78,32 @@ To better group the game as an object, I wrote a class representing its properti
 - **\_\_str\_\_**: Returns a string representation of the class/object
 
 ## Libraries used
-List out the python libraries you purposefully used in your project and why. You can look at your requirements.txt file and go back to https://pypi.org/ to rediscover the purpose of a library if needed.
+* cachetools
+    - Python module which provides various memoizing collections and decorators.
+    
+* google-auth
+     - This library simplifies using Google’s various server-to-server authentication mechanisms to access Google APIs.
+     
+* google-auth-oauthlib
+    - This library provides oauthlib integration with google-auth.
+    
+* gspread
+     - Interface for working with Google Sheets.
+     
+* oauthlib
+    - A generic, spec-compliant, thorough implementation of the OAuth request-signing logic for Python 3.6+.
+    
+* pyasn1
+    - Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)
+    
+* pyasn1-modules
+    - A collection of ASN.1 modules expressed in form of pyasn1 classes. Includes protocols PDUs definition (SNMP, LDAP etc.) and various data structures (X.509, PKCS etc.).
+    
+* requests-oauthlib
+    - Provides first-class OAuth library support for Requests.
 
-A bulleted list is a good presentation for this information.
+* rsa
+    - It supports encryption and decryption, signing and verifying signatures, and key generation according to PKCS#1 version 1.5.
 
 ## Testing
 
