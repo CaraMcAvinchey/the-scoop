@@ -117,25 +117,14 @@ The spreadsheet to be updated after an order is complete:
 ## Testing
 
 ### Validation Testing
-You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
-
-For each python file in your project, run it through the pep8online validator
-
-- [PEP8 Validator](http://pep8online.com/) include a screenshot of results
-
-Note any errors or warnings you are ignoring and why. 
-
-If the line is too long just add 
-```$python 
-# noqa
-```
-There is a space before the # and after it to skip the quality assurance for that line.
+No errors reported from [PEP8](http://pep8online.com/checkresult) validator:
+<img width="977" alt="Screenshot 2022-06-17 at 22 57 10" src="https://user-images.githubusercontent.com/97494262/174323718-8b2aaf72-532b-45e2-936a-60f69dcf814e.png">
 
 ### Manual Testing
 * You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/1tB4dZcZOXlaUn-47L1OZD27e5xZdzZz8Y1MKFU8m00U/edit?usp=sharing)
 
 ### Defects of Note
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here.
+* 
 
 ### Outstanding Defects
 It's ok to not resolve all the defects you found as long as:
