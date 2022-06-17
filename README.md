@@ -79,25 +79,12 @@ The below flowchart maps out the user experience from beginning to end. The regi
 ![icecream-two-three](https://user-images.githubusercontent.com/97494262/174000156-c863418a-35f2-4e94-9420-a844a3d243d8.jpg)
 
 ## Data Model/ Classes
-In this section write our your data model(s) or classes. 
 
-You might want to include subsections that include how the data in the model is initialized and then the methods that you created to update it through the program.
-
-
-You can create a table and take a screenshot, or you can write up subsections in markdown:
-
-![image](https://user-images.githubusercontent.com/23039742/130148204-b56406bf-0fff-48f3-9dee-2f3cdbe67cc5.png)
-
-### Class X
 To better group the game as an object, I wrote a class representing its properties and had method functions to update those properties: 
+<img width="517" alt="Screenshot 2022-06-17 at 22 47 36" src="https://user-images.githubusercontent.com/97494262/174321732-aff46620-00cf-47ff-8fbd-1bf171464121.png">
 
-**Properties**
-- property 1: is a {string} it represents {something} 
-- property 2: is a {string} it represents {something} 
-
-**Methods**
-- **\_\_init\_\_**: Initialize method, it starts the class off with default parameters as if a user just started to play a game.
-- **\_\_str\_\_**: Returns a string representation of the class/object
+The spreadsheet to be updated after an order is complete: 
+<img width="1039" alt="Screenshot 2022-06-17 at 22 49 56" src="https://user-images.githubusercontent.com/97494262/174322164-341c93f8-1518-4e63-b944-ace63e5ed523.png">
 
 ## Libraries used
 * cachetools
