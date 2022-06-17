@@ -47,11 +47,13 @@ class IceCreamOrder:
     scoop_options
         Displays the menu for the customer to order
     repeat_order
-        Allows the customer to order again        
+        Allows the customer to order again
     order_complete
         Records the order placed in the spreadsheet
     print_receipt
         Prints the order on the screen for the customer
+    order_number
+        Prints a number for customer order
     """
 
     def __init__(self):
