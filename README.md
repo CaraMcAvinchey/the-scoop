@@ -15,7 +15,7 @@ You can view the deployed website [here](https://the-scoop-icecream.herokuapp.co
 ## Table of Contents
 XX
 
-## How to use The Scoop
+## The Scoop: Steps to Use
 * First the customer is welcomed to the app and asked for their name. If valid, the customer and make their first order.
 ![1](https://user-images.githubusercontent.com/97494262/173981166-5e0f66ea-ce4a-4cb9-983e-1e950403529e.gif)
 
@@ -37,19 +37,23 @@ XX
 * The customer can proceed to the collection point to pay and pick up their order according to the number.
 
 ## Features
-Use this section to itemize the features of your project. 
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-It's easiest to break this section down into piece parts or core functionality blocks such as data upload, user input, analysis and data output; focusing on the atomic functions and data model(s) or classes you created to make the program work. 
-
 
 ### Implemented Features
-In each subsection, write out what the feature is for and what value it adds. If there is terminal interaction or output associated with the function, include a screenshot.
+
+* Welcome Function
+    - This serves as an introduction to the company and the service offered with a friendly hello and welcome
+ <img width="546" alt="image" src="https://user-images.githubusercontent.com/97494262/174312293-45d3400d-79d3-4e47-9229-db3cdd9f1e0c.png">
+
+* User Information
+* Ordering Function
+* Reorder Function
+* Order Successful
+* Print Receipt
+* Order Complete
 
 ### Future Features
 
-* For future development, the app could allow for a login/sign up function to collect basic info about The Scoop customer for a possible rewards program e.g for every 5 double scoops, get a single scoop free.
+* For future development, the app could allow for a login/sign up function to collect basic info about The Scoop customer for a possible rewards program e.g for every 5 double scoops, get a single scoop free. (the registration function can be found in the flow chart [here](#design-documents)
 * The Scoop is a growing business, as the product offering increases (such as toppings, cone/cup, flavours) these options could be added to the app.
 
 ## Design Documents
