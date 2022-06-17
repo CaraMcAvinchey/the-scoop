@@ -36,9 +36,9 @@ class IceCreamOrder:
         The customer's first name
     items_in_order = list
         The items a customer ordered
-    order_no = str
+    order_no = int
         An order number for the customer
-    total_price = number
+    total_price = int
         The total price of the order placed
     Methods
     --------
