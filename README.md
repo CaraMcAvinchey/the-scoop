@@ -32,6 +32,8 @@ XX
 <img width="760" alt="image" src="https://user-images.githubusercontent.com/97494262/173982983-d69fb162-3eeb-4d37-b081-725adcbb6fc2.png">
 
 * If no, the customer will receive notice that their order is complete and the price of the order is displayed.
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/97494262/174240674-48f7159f-46f2-4182-9fa2-e4c9af4e1010.png">
+
 * The customer can proceed to the collection point to pay and pick up their order according to the number.
 
 ## Features
