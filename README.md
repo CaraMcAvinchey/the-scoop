@@ -234,9 +234,13 @@ This application will be deployed via [Heroku](https://heroku.com)
 * Dog's in the Hood by Obiageli Onyekpe
     - Deployment section steps in README.
     - Libraries section used and descriptions in README.
+    
 * Flowchart created using [diagrams.net](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse)
-* The [GeeksforGeeks](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse) article helped with creating the order number function.
-* Displaying the currency correctly was achieved with the help of [this](https://www.adamsmith.haus/python/answers/how-to-format-currency-in-python) article.
+
+* Articles:
+    - This [GeeksforGeeks](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse) article helped with creating the order number function.
+    - Displaying the correct currency was achieved with the help of [this](https://www.adamsmith.haus/python/answers/how-to-format-currency-in-python) article.
+    
 * Thanks to my mentor, Malia Havlicek for reviewing and giving suggestions on how to improve my project.
 * The tutors at Code Institute for their patience and support.
 * The Code Institute Slack community for tips and guidance.
