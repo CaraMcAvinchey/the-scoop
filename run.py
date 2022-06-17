@@ -86,17 +86,17 @@ class IceCreamOrder:
         print("1 - 1 scoop")
         print("2 - 2 scoops")
         print("3 - 3 scoops\n")
-        scoop_option = input("Enter your answer here:\n").upper().strip()
+        scoop_option = input("Enter your answer here:\n").strip()
 
         end_section()
 
-        # validate order
+        # validate customer order
         while scoop_option not in ("1", "2", "3"):
             print("How many scoops would you like?")
             print("1 - 1 scoop")
             print("2 - 2 scoops")
             print("3 - 3 scoops")
-            scoop_option = input("Enter your answer here:\n").upper().strip()
+            scoop_option = input("Enter your answer here:\n").strip()
             end_section()
         self.items_in_order.append(scoop_option)
 
@@ -112,7 +112,6 @@ class IceCreamOrder:
         singles = self.items_in_order.count("1")
         doubles = self.items_in_order.count("2")
         triples = self.items_in_order.count("3")
-        total_price = 0.00
 
         worksheet_to_update = SHEET.worksheet('sales')
         one_scoop_column = worksheet_to_update.col_values(1)
@@ -160,9 +159,13 @@ class IceCreamOrder:
         if repeat_order == "1":
             self.scoop_options()
 
-        elif repeat_order == "2":
+        if repeat_order == "2":
             print("\nLet's get your order ready...\n")
             self.order_complete()
+            
+        if repeat_order not in ("1", "2"):
+            print("Enter the number 1 or 2 please!")
+            self.repeat_order()
 
     def order_number(self):
         """
