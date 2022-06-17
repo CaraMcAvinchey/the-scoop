@@ -13,9 +13,29 @@ Cara McAvinchey
 You can view the deployed website [here](https://the-scoop-icecream.herokuapp.com/)
 
 ## Table of Contents
-XX
+- [THE SCOOP](#the-scoop)
+  * [Author](#author)
+  * [Project Overview](#project-overview)
+  * [Table of Contents](#table-of-contents)
+  * [The Scoop: Steps to Use](#the-scoop--steps-to-use)
+  * [Features](#features)
+    + [Implemented Features](#implemented-features)
+    + [Future Features](#future-features)
+  * [Design Documents](#design-documents)
+  * [Data Model/ Classes](#data-model--classes)
+  * [Libraries used](#libraries-used)
+  * [Testing](#testing)
+    + [Validation Testing](#validation-testing)
+    + [Manual Testing](#manual-testing)
+    + [Defects of Note](#defects-of-note)
+    + [Outstanding Defects](#outstanding-defects)
+  * [Deployment](#deployment)
+    + [Gitpod](#gitpod)
+    + [Heroku](#heroku)
+  * [Credits](#credits)
+    + [Acknowledgments](#acknowledgments)
 
-## The Scoop: Steps to Use
+## Steps to Use: The Scoop
 * First the customer is welcomed to the app and asked for their name. If valid, the customer and make their first order.
 ![1](https://user-images.githubusercontent.com/97494262/173981166-5e0f66ea-ce4a-4cb9-983e-1e950403529e.gif)
 
