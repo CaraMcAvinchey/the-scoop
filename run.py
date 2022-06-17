@@ -127,22 +127,29 @@ class IceCreamOrder:
 
         worksheet_to_update.append_row(self.items_in_order)
 
-        print("\nYour order has been added!")
+        print("\nYour order is with our scoopers!")
         self.print_receipt(singles, doubles, triples)
 
     def print_receipt(self, singles, doubles, triples):
         """
-        Print order for the user with a price.
+        Print order for the user with a total price.
         """
         if singles > 0:
-            print(f"Single scoop: {singles} = ${1.50 * singles}")
-        if doubles > 0:
-            print(f"Double scoop: {doubles} = ${2.50 * doubles}")
-        if triples > 0:
-            print(f"Triple scoop: {triples} = ${3.50 * triples}")
+            singles_price = "${:,.2f}".format(1.5 * singles)
+            print(f"Single scoop: {singles} = {singles_price}")
 
-        total_price = (1.50 * singles) + (2.50 * doubles) + (3.50 * triples)
-        print(f"Total: ${total_price}")
+        if doubles > 0:
+            doubles_price = "${:,.2f}".format(2.5 * doubles)
+            print(f"Double scoop: {doubles} = {doubles_price}")
+
+        if triples > 0:
+            triples_price = "${:,.2f}".format(3.5 * triples)
+            print(f"Triple scoop: {triples} = {triples_price}")
+
+        price = (1.50 * singles) + (2.50 * doubles) + (3.50 * triples)
+        total_price = "${:,.2f}".format(price)
+
+        print(f"Total: {total_price}")
 
         self.order_number()
 
