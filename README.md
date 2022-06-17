@@ -124,6 +124,7 @@ No errors reported from [PEP8](http://pep8online.com/checkresult) validator:
 * You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/1tB4dZcZOXlaUn-47L1OZD27e5xZdzZz8Y1MKFU8m00U/edit?usp=sharing)
 
 ### Defects of Note
+* The validation for the reorder function [here](https://github.com/CaraMcAvinchey/the-scoop/issues/2) was tricky to fix but resolved using a third if statement.
 * 
 
 ### Outstanding Defects
