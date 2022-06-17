@@ -41,20 +41,36 @@ XX
 ### Implemented Features
 
 * Welcome Function
-    - This serves as an introduction to the company and the service offered with a friendly hello and welcome
- <img width="546" alt="image" src="https://user-images.githubusercontent.com/97494262/174312293-45d3400d-79d3-4e47-9229-db3cdd9f1e0c.png">
+    - An introduction to the company and the service offered with a friendly hello and welcome. There is no terminal interaction at this point.
+ <img width="446" alt="image" src="https://user-images.githubusercontent.com/97494262/174312293-45d3400d-79d3-4e47-9229-db3cdd9f1e0c.png">
 
 * User Information
+    - The customer is requested their name and the input will be validated for numbers, characters or single letters.
+    - The validate_name function is triggered according to the following if statements:
+ <img width="390" alt="image" src="https://user-images.githubusercontent.com/97494262/174313354-704e5151-e354-4d1c-a3f9-288a5e1dc277.png">
+ 
 * Ordering Function
+    - The customer will then input their order using numbers. The function will repeat the order again if anything other than the numbers are input.
+    
 * Reorder Function
+    - After each ice cream is ordered, the customer is given the option to order another or continue to the next step.
+    <img width="450" alt="image" src="https://user-images.githubusercontent.com/97494262/174314151-96c78add-8570-44ad-b0d7-40b6baf9ac08.png">
+
 * Order Successful
+    - The function will add the numbers to an external spreadsheet for the business owner to get total sales orders.
+
 * Print Receipt
+    - The customer will see a summary of their order and the final price. The fuction calculates the number of each scoop ordered and outputs the cost.
+    <img width="557" alt="image" src="https://user-images.githubusercontent.com/97494262/174318752-b436b7d3-6555-4df6-9b56-ba4ef1edf5d6.png">
+
 * Order Complete
+    - The function will generate a random number from 1-100 for the customer to take to the counter and pay/pick up their order when ready.
 
 ### Future Features
 
 * For future development, the app could allow for a login/sign up function to collect basic info about The Scoop customer for a possible rewards program e.g for every 5 double scoops, get a single scoop free. (the registration function can be found in the flow chart [here](#design-documents)
 * The Scoop is a growing business, as the product offering increases (such as toppings, cone/cup, flavours) these options could be added to the app.
+* If the customer makes a mistake, adding the ability to remove an order would improve the user experience.
 
 ## Design Documents
 
