@@ -138,7 +138,7 @@ The spreadsheet to be updated after an order is complete:
 
 ### Validation Testing
 No errors reported from [PEP8](http://pep8online.com/checkresult) validator:
-<img width="977" alt="Screenshot 2022-06-17 at 22 57 10" src="https://user-images.githubusercontent.com/97494262/174323718-8b2aaf72-532b-45e2-936a-60f69dcf814e.png">
+<img width="777" alt="Screenshot 2022-06-17 at 22 57 10" src="https://user-images.githubusercontent.com/97494262/174323718-8b2aaf72-532b-45e2-936a-60f69dcf814e.png">
 
 ### Manual Testing
 * You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/1tB4dZcZOXlaUn-47L1OZD27e5xZdzZz8Y1MKFU8m00U/edit?usp=sharing)
