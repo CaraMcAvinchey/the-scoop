@@ -150,7 +150,7 @@ No errors reported from [PEP8](http://pep8online.com/checkresult) validator:
 ### Manual Testing
 * You can view manual testing checklist and record of the application [here](https://docs.google.com/spreadsheets/d/1tB4dZcZOXlaUn-47L1OZD27e5xZdzZz8Y1MKFU8m00U/edit?usp=sharing).
 * This is an example of how testing was done below:
-- Input numbers, special characters, extra spaces and blank answers to check if the inputs would break:
+   - Input numbers, special characters, extra spaces and blank answers to check if the inputs would break:
 ![Screen Recording 2022-06-18 at 12 18 58](https://user-images.githubusercontent.com/97494262/174422560-9f1ae6ce-3c20-40da-91e1-0498bcec8e33.gif)
 
 ### Defects of Note
