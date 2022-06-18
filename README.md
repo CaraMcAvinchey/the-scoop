@@ -94,8 +94,9 @@ You can view the deployed website [here](https://the-scoop-icecream.herokuapp.co
 ### Future Features
 
 * For future development, the app could allow for a login/sign up function to collect basic info about The Scoop customer for a possible rewards program e.g for every 5 double scoops, get a single scoop free. (the registration function can be found in the flow chart [here](#design-documents)
-* The Scoop is a growing business, as the product offering increases (such as toppings, cone/cup, flavours) these options could be added to the app.
+* The Scoop is a growing business, as the product offering increases (such as toppings, cone/cup, flavours) these options could be added to the app and tallied in the spreadsheet for research into which products are most popular.
 * If the customer makes a mistake, adding the ability to remove an order would improve the user experience.
+* For the business owner, being able to see the sales for the day can assist with stock and reducing waste. 
 
 ## Design Documents
 
