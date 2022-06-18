@@ -43,16 +43,16 @@ You can view the deployed website [here](https://the-scoop-icecream.herokuapp.co
 ![2](https://user-images.githubusercontent.com/97494262/173981316-be2beec0-a8cd-4a7d-9639-2c121b27751a.gif)
 
 * The menu displayed will ask for the number of scoops.
-<img width="757" alt="image" src="https://user-images.githubusercontent.com/97494262/173981509-7183c6fb-a425-475b-b6f3-b47175c92636.png">
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/97494262/173981509-7183c6fb-a425-475b-b6f3-b47175c92636.png">
 
 * The menu will display again if the input is not valid.
 ![3](https://user-images.githubusercontent.com/97494262/173982886-cc4916bb-15af-434a-8a21-00b400b99904.gif)
 
 * The app will then ask the customer if they'd like to order another ice cream.
-<img width="760" alt="image" src="https://user-images.githubusercontent.com/97494262/173982983-d69fb162-3eeb-4d37-b081-725adcbb6fc2.png">
+<img width="560" alt="image" src="https://user-images.githubusercontent.com/97494262/173982983-d69fb162-3eeb-4d37-b081-725adcbb6fc2.png">
 
 * If no, the customer will receive notice that their order is complete and the price of the order is displayed.
-<img width="757" alt="image" src="https://user-images.githubusercontent.com/97494262/174240674-48f7159f-46f2-4182-9fa2-e4c9af4e1010.png">
+<img width="551" alt="Screenshot 2022-06-18 at 10 05 15" src="https://user-images.githubusercontent.com/97494262/174418369-6f9131f4-1e68-4c6d-aff0-11b4c799a8d4.png">
 
 * The customer can proceed to the collection point to pay and pick up their order according to the number.
 * The business owner can reflect on the sales of the day when looking at the data sheet [here](https://docs.google.com/spreadsheets/d/1RuTtpaJF0AO2Xcl5ARNFf5fIYCY9jz97sHIwa_XnoXE/edit?usp=sharing)
