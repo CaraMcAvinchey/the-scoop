@@ -84,7 +84,7 @@ You can view the deployed website [here](https://the-scoop-icecream.herokuapp.co
     - The function will add the numbers to an external spreadsheet for the business owner to get total sales orders.
 
 **Print Receipt**
-    - The customer will see a summary of their order and the final price. The fuction calculates the number of each scoop ordered and outputs the cost.
+    - The customer will see a summary of their order and the final price. The function calculates the number of each scoop ordered and outputs the cost.
     
  <img width="557" alt="image" src="https://user-images.githubusercontent.com/97494262/174318752-b436b7d3-6555-4df6-9b56-ba4ef1edf5d6.png">
 
