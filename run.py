@@ -61,6 +61,7 @@ class IceCreamOrder:
         self.user = self.user_info()
         self.order_no = ''
         self.total_price = 0
+        self.scoop_options()
 
     def user_info(self):
         """
@@ -68,14 +69,15 @@ class IceCreamOrder:
         """
         print("Let's get scooping!\n")
         print("What's your name?\n")
-        while True:
+        name = False
+        while not name:
             name = input("Enter your name here:\n").capitalize().strip()
             end_section()
 
             if validate_name(name):
                 print(f"Hi {name}!\n")
-                self.scoop_options()
-                break
+            else:
+                name = False
 
         return name
 
@@ -111,25 +113,22 @@ class IceCreamOrder:
         Adds sales data to the worksheet.
         Informs customer that their order is done.
         """
+        print("\nYour order is with our scoopers!")
+        self.order_number()
+
         singles = self.items_in_order.count("1")
         doubles = self.items_in_order.count("2")
         triples = self.items_in_order.count("3")
 
         worksheet_to_update = SHEET.worksheet('sales')
-        one_scoop_column = worksheet_to_update.col_values(1)
-        two_scoop_column = worksheet_to_update.col_values(2)
-        three_scoop_column = worksheet_to_update.col_values(3)
+        worksheet_to_update.append_row([
+            singles,
+            doubles,
+            triples,
+            self.order_no,
+            self.user
+        ])
 
-        if singles > 0:
-            one_scoop_column.append(singles)
-        if doubles > 0:
-            two_scoop_column.append(doubles)
-        if triples > 0:
-            three_scoop_column.append(triples)
-
-        worksheet_to_update.append_row(self.items_in_order)
-
-        print("\nYour order is with our scoopers!")
         self.print_receipt(singles, doubles, triples)
 
     def print_receipt(self, singles, doubles, triples):
@@ -153,8 +152,6 @@ class IceCreamOrder:
 
         print(f"Total: {total_price}")
 
-        self.order_number()
-
     def repeat_order(self):
         """
         Allow customer to order another ice cream.
@@ -167,11 +164,9 @@ class IceCreamOrder:
 
         if repeat_order == "1":
             self.scoop_options()
-
         if repeat_order == "2":
             print("\nLet's get your order ready...\n")
             self.order_complete()
-            
         if repeat_order not in ("1", "2"):
             print("Enter the number 1 or 2 please!")
             self.repeat_order()
@@ -181,8 +176,8 @@ class IceCreamOrder:
         Generates an order number for the customer.
         """
         print(' ')
-        order_no = random.randint(1, 100)
-        print(f"Your order number is {order_no}")
+        self.order_no = random.randint(1, 100)
+        print(f"Your order number is {self.order_no}")
 
 
 def validate_name(name):
