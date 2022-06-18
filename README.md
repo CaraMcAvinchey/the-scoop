@@ -151,15 +151,14 @@ No errors reported from [PEP8](http://pep8online.com/checkresult) validator:
 * You can view manual testing checklist and record of the application [here](https://docs.google.com/spreadsheets/d/1tB4dZcZOXlaUn-47L1OZD27e5xZdzZz8Y1MKFU8m00U/edit?usp=sharing).
 * This is an example of how testing was done below:
 - Input numbers, special characters, extra spaces and blank answers to check if the inputs would break:
-
 ![Screen Recording 2022-06-18 at 12 18 58](https://user-images.githubusercontent.com/97494262/174422560-9f1ae6ce-3c20-40da-91e1-0498bcec8e33.gif)
 
 ### Defects of Note
 * The validation for the reorder function [here](https://github.com/CaraMcAvinchey/the-scoop/issues/2) was tricky to fix but resolved using a third if statement.
 * The data being sent to the spreadsheet was displaying incorrectly [here](https://github.com/CaraMcAvinchey/the-scoop/issues/3).
- - This happened when multiple items were ordered e.g. 2 x single scoops, 3 double scoops.
- - I tried updating each cell on it's own using the cell reference, then attempted to add to column 1, 2 etc. 
- - In the end, my mentor helped me to append the array to the row and the issue was resolved.
+  - This happened when multiple items were ordered e.g. 2 x single scoops, 3 double scoops.
+  - I tried updating each cell on it's own using the cell reference, then attempted to add to column 1, 2 etc. 
+  - In the end, my mentor helped me to append the array to the row and the issue was resolved.
 
 ### Outstanding Defects
 * There are no outstanding defects.
