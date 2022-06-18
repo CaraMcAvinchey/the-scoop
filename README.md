@@ -61,30 +61,30 @@ You can view the deployed website [here](https://the-scoop-icecream.herokuapp.co
 
 ### Implemented Features
 
-** Welcome Function **
+**Welcome Function**
     - An introduction to the company and the service offered with a friendly hello and welcome. There is no terminal interaction at this point.
  <img width="446" alt="image" src="https://user-images.githubusercontent.com/97494262/174312293-45d3400d-79d3-4e47-9229-db3cdd9f1e0c.png">
 
-** User Information **
+**User Information**
     - The customer is requested their name and the input will be validated for numbers, characters or single letters.
     - The validate_name function is triggered according to the following if statements:
  <img width="390" alt="image" src="https://user-images.githubusercontent.com/97494262/174313354-704e5151-e354-4d1c-a3f9-288a5e1dc277.png">
  
-** Ordering Function **
+**Ordering Function**
     - The customer will then input their order using numbers. The function will repeat the order again if anything other than the numbers are input.
     
-** Reorder Function **
+**Reorder Function**
     - After each ice cream is ordered, the customer is given the option to order another or continue to the next step.
     <img width="450" alt="image" src="https://user-images.githubusercontent.com/97494262/174314151-96c78add-8570-44ad-b0d7-40b6baf9ac08.png">
 
-** Order Successful **
+**Order Successful**
     - The function will add the numbers to an external spreadsheet for the business owner to get total sales orders.
 
-** Print Receipt **
+**Print Receipt**
     - The customer will see a summary of their order and the final price. The fuction calculates the number of each scoop ordered and outputs the cost.
     <img width="557" alt="image" src="https://user-images.githubusercontent.com/97494262/174318752-b436b7d3-6555-4df6-9b56-ba4ef1edf5d6.png">
 
-** Order Complete **
+**Order Complete**
     - The function will generate a random number from 1-100 for the customer to take to the counter and pay/pick up their order when ready.
 
 ### Future Features
