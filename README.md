@@ -8,7 +8,7 @@ The Scoop is a Python terminal application which runs in the Code Institute mock
 Cara McAvinchey
 
 ## Project Overview
-*  The Scoop is an app built for an ice cream truck so that customers can easily place an order and collect their items with an order number. The business owner will be able to see how many orders were made for each scoop type and customers can see how much their order will be at the end of the process.
+*  The Scoop is an app built for an ice cream truck so that customers can easily place an order and collect their items with an order number. The business owner will be able to see how many orders of a single flavour were made for each scoop type and customers can see how much their order will be at the end of the process.
 
 You can view the deployed website [here](https://the-scoop-icecream.herokuapp.com/)
 
@@ -55,6 +55,7 @@ You can view the deployed website [here](https://the-scoop-icecream.herokuapp.co
 <img width="757" alt="image" src="https://user-images.githubusercontent.com/97494262/174240674-48f7159f-46f2-4182-9fa2-e4c9af4e1010.png">
 
 * The customer can proceed to the collection point to pay and pick up their order according to the number.
+* The business owner can reflect on the sales of the day when looking at the data sheet [here](https://docs.google.com/spreadsheets/d/1RuTtpaJF0AO2Xcl5ARNFf5fIYCY9jz97sHIwa_XnoXE/edit?usp=sharing)
 
 ## Features
 
@@ -100,11 +101,11 @@ The below flowchart maps out the user experience from beginning to end. The regi
 
 ## Data Model/ Classes
 
-To better group the game as an object, I wrote a class representing its properties and had method functions to update those properties: 
+To better group the ordering functions as an object, I wrote a class representing its properties: 
 <img width="517" alt="Screenshot 2022-06-17 at 22 47 36" src="https://user-images.githubusercontent.com/97494262/174321732-aff46620-00cf-47ff-8fbd-1bf171464121.png">
 
 The spreadsheet to be updated after an order is complete: 
-<img width="1039" alt="Screenshot 2022-06-17 at 22 49 56" src="https://user-images.githubusercontent.com/97494262/174322164-341c93f8-1518-4e63-b944-ace63e5ed523.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/97494262/174418051-ec1bd0ee-fdfa-4d60-878f-b6fc02d48063.png">
 
 ## Libraries used
 * cachetools
@@ -145,17 +146,13 @@ No errors reported from [PEP8](http://pep8online.com/checkresult) validator:
 
 ### Defects of Note
 * The validation for the reorder function [here](https://github.com/CaraMcAvinchey/the-scoop/issues/2) was tricky to fix but resolved using a third if statement.
-* 
+* The data being sent to the spreadsheet was displaying incorrectly [here](https://github.com/CaraMcAvinchey/the-scoop/issues/3)
+ - This happened when multiple items were ordered e.g. 2 x single scoops, 3 double scoops.
+ - I tried updating each cell on it's own using the cell reference, then attempted to add to column 1, 2 etc. 
+ - In the end, my mentor helped me to append the array to the row and the issue was resolved.
 
 ### Outstanding Defects
-It's ok to not resolve all the defects you found as long as:
-- it does not impacting a user from completing a vital function on the website
-- it only affects a very small subset of users
-- is an extreme edge case that very few users would try
-
-If you know of something that isn't quite right, create an issue and  link to it here and explain why you chose not to resolve it. 
-
-Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline and lack of skills. It's best to mention it but note why you allowed it to go live than let asccessors think you didn't notice it.
+* There are no outstanding defects.
 
 ## Deployment
 
